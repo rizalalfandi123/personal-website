@@ -30,7 +30,7 @@ export const ModeToggle = () => {
   console.log({ theme });
 
   const SelectedIcon: TIcon = React.useMemo(() => {
-    switch (theme || localStorage.getItem("theme")) {
+    switch (theme || (typeof window !== "undefined" && localStorage.getItem("theme"))) {
       case "dark":
         return Icons.moon;
 
