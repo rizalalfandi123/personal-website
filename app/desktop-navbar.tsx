@@ -1,6 +1,7 @@
 import { ModeToggle } from "./mode-toggle";
 import { NavbarItem, NavbarItems } from "./navbar-items";
-import { SheetPosition } from "./mobile-navbar";
+import { MobileNavbar } from "./mobile-navbar";
+import Link from "next/link";
 
 export const navbarItems: NavbarItem[] = [
   {
@@ -8,12 +9,12 @@ export const navbarItems: NavbarItem[] = [
     pathname: "/",
   },
   {
-    children: "Blog",
-    pathname: "/blog",
-  },
-  {
     children: "Portofolio",
     pathname: "/portofolio",
+  },
+  {
+    children: "Blog",
+    pathname: "/blog",
   },
   {
     children: "Contact",
@@ -21,14 +22,11 @@ export const navbarItems: NavbarItem[] = [
   },
 ];
 
-export const Navbar = () => {
+export const DesktopNavbar = () => {
   return (
     <nav className="border-b shadow-sm">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="https://flowbite.com/" className="flex items-center">
-          {/* <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 mr-3" alt="Flowbite Logo" /> */}
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
-        </a>
+        <Link href="/" className="text-2xl font-semibold whitespace-nowrap">Rizal Alfandi</Link>
 
         <div className="hidden w-full md:block md:w-auto" id="navbar">
           <NavbarItems items={navbarItems} />
@@ -37,7 +35,7 @@ export const Navbar = () => {
         <div className="flex gap-2">
           <ModeToggle />
 
-          <SheetPosition />
+          <MobileNavbar />
         </div>
       </div>
     </nav>

@@ -27,17 +27,18 @@ const modeItems: ModeItem[] = [
 export const ModeToggle = () => {
   const { theme, setTheme } = useTheme();
 
+  console.log({ theme });
 
   const SelectedIcon: TIcon = React.useMemo(() => {
-    switch (theme) {
+    switch (theme || localStorage.getItem("theme")) {
       case "dark":
-        return modeItems[1].icon;
+        return Icons.moon;
 
       case "light":
-        return modeItems[0].icon;
+        return Icons.sun;
 
       default:
-        return modeItems[2].icon;
+        return Icons.computer;
     }
   }, [theme]);
 

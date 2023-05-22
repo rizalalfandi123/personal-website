@@ -74,9 +74,93 @@
   * {
     @apply border-border;
   }
-  
+
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
+
+/* BEGIN IMAGE TILT EFFECT */
+
+.tilt-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease;
+}
+.tilt-hover-point {
+  position: absolute;
+  z-index: 2;
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+}
+.tilt-hover-point:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+.tilt-hover-point:nth-child(2) {
+  top: 0;
+  left: calc(100% / 3);
+}
+.tilt-hover-point:nth-child(3) {
+  top: 0;
+  right: 0;
+}
+.tilt-hover-point:nth-child(4) {
+  top: calc(100% / 3);
+  left: 0;
+}
+.tilt-hover-point:nth-child(5) {
+  top: calc(100% / 3);
+  right: 0;
+}
+.tilt-hover-point:nth-child(6) {
+  bottom: 0;
+  left: 0;
+}
+.tilt-hover-point:nth-child(7) {
+  bottom: 0;
+  left: calc(100% / 3);
+}
+.tilt-hover-point:nth-child(8) {
+  bottom: 0;
+  right: 0;
+}
+
+.tilt-hover-point:nth-child(1):hover ~ .tilt-image {
+  transform-origin: right top;
+  transform: perspective(1000px) rotateX(10deg) rotateY(-10deg) rotateZ(2deg);
+}
+.tilt-hover-point:nth-child(2):hover ~ .tilt-image {
+  transform-origin: center top;
+  transform: perspective(1000px) rotateX(10deg);
+}
+.tilt-hover-point:nth-child(3):hover ~ .tilt-image {
+  transform-origin: left top;
+  transform: perspective(1000px) rotateX(10deg) rotateY(10deg) rotateZ(-2deg);
+}
+.tilt-hover-point:nth-child(4):hover ~ .tilt-image {
+  transform-origin: left center;
+  transform: perspective(1000px) rotateY(-10deg);
+}
+.tilt-hover-point:nth-child(5):hover ~ .tilt-image {
+  transform-origin: right center;
+  transform: perspective(1000px) rotateY(10deg);
+}
+.tilt-hover-point:nth-child(6):hover ~ .tilt-image {
+  transform-origin: right bottom;
+  transform: perspective(1000px) rotateX(-10deg) rotateY(-10deg) rotateZ(-2deg);
+}
+.tilt-hover-point:nth-child(7):hover ~ .tilt-image {
+  transform-origin: center bottom;
+  transform: perspective(1000px) rotateX(-10deg);
+}
+.tilt-hover-point:nth-child(8):hover ~ .tilt-image {
+  transform-origin: left bottom;
+  transform: perspective(1000px) rotateX(-10deg) rotateY(10deg) rotateZ(2deg);
+}
+
+/* END IMAGE TILT EFFECT */
