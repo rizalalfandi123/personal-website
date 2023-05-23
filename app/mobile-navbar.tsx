@@ -1,21 +1,16 @@
 "use client";
 
-import { Button, Icons } from "@/components";
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { NavbarItems } from "./navbar-items";
 import { navbarItems } from "./desktop-navbar";
 import { useState } from "react";
 
-export const MobileNavbar = () => {
+export const SheetMobileNavbar = ({ children }: React.PropsWithChildren) => {
   const [open, setOpen] = useState<boolean>(false);
 
   return (
     <Sheet open={open} onOpenChange={(e) => setOpen(e)}>
-      <SheetTrigger asChild>
-        <Button variant="ghost" size="sm" className="w-9 px-0 md:hidden">
-          <Icons.hamburger />
-        </Button>
-      </SheetTrigger>
+      {children}
 
       <SheetContent position="left" size="full">
         <SheetHeader>

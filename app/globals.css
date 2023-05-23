@@ -81,6 +81,12 @@
   }
 }
 
+@layer utilities {
+  .stack-icon {
+    @apply transition-all duration-700 hover:scale-125 hover:z-10;
+  }
+}
+
 /* BEGIN IMAGE TILT EFFECT */
 
 .tilt-image {

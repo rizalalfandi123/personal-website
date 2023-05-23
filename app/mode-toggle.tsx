@@ -27,8 +27,6 @@ const modeItems: ModeItem[] = [
 export const ModeToggle = () => {
   const { theme, setTheme } = useTheme();
 
-  console.log({ theme });
-
   const SelectedIcon: TIcon = React.useMemo(() => {
     switch (theme || (typeof window !== "undefined" && localStorage.getItem("theme"))) {
       case "dark":
