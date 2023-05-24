@@ -44,8 +44,8 @@ export default function RootLayout({ children }: React.PropsWithChildren) {
                 <h6 className="font-medium">Sitemap</h6>
 
                 <ul>
-                  {navbarItems.map((el) => {
-                    return <Link className="block" {...el} />
+                  {navbarItems.map((el, index) => {
+                    return <Link key={index} className="block" {...el} />
                   })}
                 </ul>
               </div>
