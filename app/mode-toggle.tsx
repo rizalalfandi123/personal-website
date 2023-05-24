@@ -51,7 +51,7 @@ export const ModeToggle = () => {
       <DropdownMenuContent align="end">
         {modeItems.map((mode, index) => {
           return (
-            <DropdownMenuCheckboxItem checked={theme == mode.value} onClick={() => setTheme(mode.value)} key={index}>
+            <DropdownMenuCheckboxItem onClick={() => setTheme(mode.value)} key={index}>
               <mode.icon className="h-4 w-4" />
               <span className="ml-2">{mode.label}</span>
             </DropdownMenuCheckboxItem>
