@@ -5,7 +5,7 @@
 </script>
 
 <div
-	class="p-6 rounded-lg group/experience-card flex flex-col gap-1 sm:flex-row sm:gap-4 sm:justify-between lg:group-hover/experience-list:opacity-50 lg:hover:opacity-[100!important] lg:hover:bg-slate-800/40 lg:hover:shadow-[inset_22_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg transition-all"
+	class="rounded-lg group/experience-card flex flex-col gap-1 sm:flex-row sm:gap-4 sm:justify-between lg:p-6 lg:group-hover/experience-list:opacity-50 lg:hover:opacity-[100!important] lg:hover:bg-slate-800/40 lg:hover:shadow-[inset_22_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg transition-all"
 >
 	<p class="text-slate-500 text-sm mb-2 tracking-wide font-semibold sm:w-1/4 lg:mb-0 lg:group-hover/experience-list:text-slate-200">{experince.duration}</p>
 	<div class="sm:w-3/4 space-y-2">
