@@ -120,7 +120,7 @@
 		<section id="experience" class="main-scroll-section scroll-mt-24">
 			<SectionTitle title="Experience" />
 
-			<ul class="group/experience-list space-y-6 lg:space-y-2">
+			<ul class="group/experience-list space-y-8 lg:space-y-2">
 				{#each experiences as experience, index (index)}
 					<li>
 						<ExperienceCard experince={experience} />

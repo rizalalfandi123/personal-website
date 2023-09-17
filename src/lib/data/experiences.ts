@@ -5,7 +5,7 @@ export const experiences: Array<Experience> = [
 		company: 'Zahir',
 		companyWebsite: 'https://zahiraccounting.com/',
 		description:
-			'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.',
+			'My team and I developed a web-based accounting software that will be used by more than 50,000 users. The application is made using React Js and MUI. We work using egile methodology, collaborate well, and communicate clearly.',
 		duration: 'Dec 2021 - Jan 2023',
 		position: 'Frontend Web Developer',
 		products: [
@@ -18,20 +18,28 @@ export const experiences: Array<Experience> = [
 		company: 'MD Media',
 		companyWebsite: 'https://www.mdmedia.co.id/',
 		description:
-			'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.',
+			'I developed an internal company application using Next Js, Typescript and Tailwind CSS. This application will be used for operational and administrative activities.',
 		duration: 'Jan 2023 - Jun 2023',
 		position: 'Frontend Web Developer',
 		products: [],
-		skills: ['React Js', 'Tailwind CSS', 'Capacitor', 'Svelte Js', 'Typescript', 'Graph QL']
+		skills: ['Next Js', 'Tailwind CSS', 'Capacitor', 'Svelte Js', 'Typescript']
 	},
-    {
+	{
 		company: 'Komerce',
 		companyWebsite: 'https://komerce.id/',
-		description:
-			'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.',
+		description: 'Develop an e commerce enabler application that will be used by many users in helping their business. The stack used is Vue Js, Typescript, and Tailwind CSS.',
 		duration: 'Jun 2023 - Present',
 		position: 'Frontend Web Developer',
-		products: [],
-		skills: ['Vue Js', 'Tailwind CSS', 'Angular', 'Typescript', 'Rest API', 'Material Design']
+		products: [{ link: 'https://partner.komerce.id/', name: 'Komship' }],
+		skills: ['Vue Js', 'Tailwind CSS', 'Angular', 'Typescript', 'Rest API']
+	},
+	{
+		company: 'Komerce',
+		companyWebsite: 'https://komerce.id/',
+		description: 'Develop an e commerce enabler application that will be used by many users in helping their business. The stack used is Vue Js, Typescript, and Tailwind CSS.',
+		duration: 'Jun 2023 - Present',
+		position: 'Frontend Web Developer',
+		products: [{ link: 'https://partner.komerce.id/', name: 'Komship' }],
+		skills: ['Vue Js', 'Tailwind CSS', 'Angular', 'Typescript', 'Rest API']
 	}
 ];
