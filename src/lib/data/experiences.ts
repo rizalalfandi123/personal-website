@@ -32,14 +32,5 @@ export const experiences: Array<Experience> = [
 		position: 'Frontend Web Developer',
 		products: [{ link: 'https://partner.komerce.id/', name: 'Komship' }],
 		skills: ['Vue Js', 'Tailwind CSS', 'Angular', 'Typescript', 'Rest API']
-	},
-	{
-		company: 'Komerce',
-		companyWebsite: 'https://komerce.id/',
-		description: 'Develop an e commerce enabler application that will be used by many users in helping their business. The stack used is Vue Js, Typescript, and Tailwind CSS.',
-		duration: 'Jun 2023 - Present',
-		position: 'Frontend Web Developer',
-		products: [{ link: 'https://partner.komerce.id/', name: 'Komship' }],
-		skills: ['Vue Js', 'Tailwind CSS', 'Angular', 'Typescript', 'Rest API']
 	}
 ];

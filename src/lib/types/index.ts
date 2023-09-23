@@ -18,3 +18,9 @@ export interface Experience {
 	products: Array<{ link: string; name: string }>;
 	duration: string;
 }
+
+export interface Project {
+	name: string;
+	imageUrl: string;
+	description: string;
+}

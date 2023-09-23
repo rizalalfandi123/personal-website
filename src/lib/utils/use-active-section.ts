@@ -10,7 +10,7 @@ export const useActiveSection = ({ sectionQuerySelector, changeCallback }: GetAc
 		const scrollSections = document.querySelectorAll(sectionQuerySelector);
 
 		const changeActiveSection = () => {
-			const currentSection = Array.from(scrollSections).find((section) => section.getBoundingClientRect().bottom > 0);
+			const currentSection = Array.from(scrollSections).find((section) => section.getBoundingClientRect().bottom > 52);
 
 			if (currentSection) {
 				changeCallback(currentSection.id);

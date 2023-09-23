@@ -2,13 +2,15 @@
 	import { onMount } from 'svelte';
 	import SectionTitle from '$lib/components/section-title.svelte';
 	import ExperienceCard from '$lib/components/experience-card.svelte';
+	import ProjectCard from '$lib/components/project-card.svelte';
 	import NavLink from '$lib/components/nav-link.svelte';
-	
+
 	import { experiences } from '$lib/data/experiences';
 	import { useActiveSection } from '$lib/utils/use-active-section';
 	import { contacts } from '$lib/data/contacts';
 
 	import type { NavigationItem } from '$lib/types';
+	import { projects } from '$lib/data/projects';
 
 	let activeSectionId: string = 'about';
 
@@ -101,7 +103,7 @@
 		</ul>
 	</header>
 
-	<main class="py-20 space-y-12 lg:space-y-20 lg:w-[60%] lg:py-24">
+	<main class="py-20 space-y-12 lg:space-y-20 lg:w-[60%] lg:pt-24 lg:pb-[80dvh]">
 		<section id="about" class="main-scroll-section scroll-mt-24">
 			<SectionTitle title="About" />
 			<article class="space-y-4">
@@ -117,13 +119,25 @@
 			</article>
 		</section>
 
-		<section id="experience" class="main-scroll-section scroll-mt-24">
+		<section id="experience" class="main-scroll-section scroll-mt-16">
 			<SectionTitle title="Experience" />
 
 			<ul class="group/experience-list space-y-8 lg:space-y-2">
 				{#each experiences as experience, index (index)}
 					<li>
 						<ExperienceCard experince={experience} />
+					</li>
+				{/each}
+			</ul>
+		</section>
+
+		<section id="projects" class="main-scroll-section scroll-mt-24 mb-24">
+			<SectionTitle title="Projects" />
+
+			<ul class="group/project-list space-y-8 lg:space-y-2">
+				{#each projects as project (project.name)}
+					<li>
+						<ProjectCard project={project} />
 					</li>
 				{/each}
 			</ul>
