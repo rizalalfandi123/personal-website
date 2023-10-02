@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { GLASS_HOVER_EFFECT } from '$lib/const';
 	import type { Project } from '$lib/types';
+	import { GLASS_HOVER_EFFECT } from '$lib/const';
 	import ArrowIcon from './icons/arrow.icon.svelte';
 
 	import { twMerge } from 'tailwind-merge';
@@ -9,7 +9,7 @@
 </script>
 
 <a
-	href="/"
+	href={project.link}
 	target="_blank"
 	class={twMerge('group/project flex flex-col gap-4 p-2 rounded-md lg:group-hover/project-list:opacity-50 lg:hover:opacity-[100!important] md:flex-row lg:p-4', GLASS_HOVER_EFFECT)}
 >

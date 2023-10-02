@@ -103,7 +103,7 @@
 		</ul>
 	</header>
 
-	<main class="py-20 space-y-12 lg:space-y-20 lg:w-[60%] lg:pt-24 lg:pb-[80dvh]">
+	<main class="py-20 space-y-12 lg:space-y-20 lg:w-[60%] lg:pt-24 lg:pb-[40dvh]">
 		<section id="about" class="main-scroll-section scroll-mt-24">
 			<SectionTitle title="About" />
 			<article class="space-y-4">

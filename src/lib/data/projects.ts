@@ -3,20 +3,15 @@ import type { Project } from '$lib/types';
 export const projects: Array<Project> = [
 	{
 		description:
-			'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book',
-		imageUrl: 'https://brittanychiang.com/_next/image?url=%2Fimages%2Fprojects%2Fcourse-card.png&w=256&q=75',
-		name: 'Project 1'
+			'Modern accounting software that is directly integrated with web-based cloud computing technology to make it easier for you to manage your business from anywhere and anytime in real time.',
+		imageUrl: '/zahir-online.png',
+		name: 'Zahir Online',
+		link: 'https://www.zahironline.com/'
 	},
 	{
-		description:
-			'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book',
-		imageUrl: 'https://brittanychiang.com/_next/image?url=%2Fimages%2Fprojects%2Fcourse-card.png&w=256&q=75',
-		name: 'Project 2'
+		description: 'Web application to facilitate the control and monitoring of all asset usage data recording activities or user activities involved in the Asset usage process.',
+		imageUrl: '/asset-management.png',
+		name: 'Zahir Asset Management',
+		link: 'https://zahir.co.id/asset-management/'
 	},
-	{
-		description:
-			'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book',
-		imageUrl: 'https://brittanychiang.com/_next/image?url=%2Fimages%2Fprojects%2Fcourse-card.png&w=256&q=75',
-		name: 'Project 3'
-	}
 ];
