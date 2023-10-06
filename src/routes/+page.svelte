@@ -131,7 +131,7 @@
 			</ul>
 		</section>
 
-		<section id="projects" class="main-scroll-section scroll-mt-24 mb-24">
+		<section id="projects" class="main-scroll-section scroll-mt-24 mb-24 lg:mb-[30vh!important]">
 			<SectionTitle title="Projects" />
 
 			<ul class="group/project-list space-y-8 lg:space-y-2">
